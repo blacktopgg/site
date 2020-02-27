@@ -1,6 +1,6 @@
-@import(urt:"https://marksheet.io/css/reset.css")
+@import url("https://marksheet.io/css/reset.css");
 
-html{
+html {
     margin: 0;
     padding: 0;
-    }
+}
