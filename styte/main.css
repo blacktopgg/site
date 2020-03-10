@@ -1,23 +1,24 @@
-@import url("https://marksheet.io/css/reset.css");
-
-.content {
- width: 100%;
- max-width: 1024px;
- padding: 0 15px;
- margin: 0 auto;
+body {
+    outline: 2px solid red;
+    margin: 10px;
 }
-nav ul {
- margin: 0;
- padding: 0;
- list-style:none;
- display: flex;
- }
-footer>nav{
- display: flex;
+header {
+    outline: 2px solid green;
+    margin: 10px;
 }
-.row{
- flex-direction: row;
+main {
+    outline: 2px solid blue;
+    margin: 10px;
 }
-.column{
- flex-direction:column;
+section {
+    outline: 2px solid orange;
+    margin: 10px;
+}
+aside {
+    outline: 2px solid grey;
+    margin: 10px;
+}
+footer {
+    outline: 2px solid black;
+    margin: 10px;
 }

@@ -1,42 +1,74 @@
-<html>
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content= "width=device-width,intial-scale=1">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <link rel="stylesheet" href="/site/styte/main.css">
-    <link rel="stylesheet"href="site/style/main.css">
-    </head>
-    <body>
-        <div class="content">
-            <header class="site-header">    <img src="images/logo.png"alt="logo"title="Логотип">
-                <nev class="row">
-                    <ul>
-                        <li>пункт 1<a>
-                        <li>
-            <section>
-            <section>
-                <footer class="site-footer">
-                    <nav class="row">
-                        <div>
-                            <ul class="column"><
-                            /ul>
-                                <li>Пункт2<a>
-                                <li>
-
-                        </div>
-                        <div>
-                             <ul class="column"><
-                            /ul>
-                                 <li>Пункт3<a>
-                                <li>
-                        </div>
-                        </nev>
+/* Импорт стилей, шрифтов и иконок */
+/* Сброс CSS */
+@import url("https://marksheet.io/css/reset.css");
 
 
-            </footer>
+/* Базовые стили */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
-            </div>
-    </body>
-</html>
+
+/* Предустановки */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Гибкая верстка */
+
+
+
+
+
+
+
+/* Шапка сайта */
+header {
+    flex: 0 0 auto;
+}
+
+
+/* Основное содержимое */
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+main > div.container {
+    flex: 1 0 auto;
+}
+section {
+    flex: 3 0 auto;
+}
+aside {
+    flex: 1 0 auto;
+}
+
+
+/* Подвал сайта */
+footer {
+    flex: 0 0 auto;
+}
+
