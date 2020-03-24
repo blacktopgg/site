@@ -3,7 +3,6 @@
 @import url("https://marksheet.io/css/reset.css");
 
 
-
 /* Базовые стили */
 html {
     height: 100%;
@@ -16,11 +15,10 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
     padding: 0 15px;
     margin: 0 auto;
 }
-
 
 /* Предустановки */
 .row {
@@ -37,32 +35,41 @@ nav ul {
     list-style: none;
 }
 
-
-/* Гибкая верстка */
-img {
-    width: 100%;
+img{
+    width:100%;
     max-width: 100%;
 }
-.col-1 {
-    flex: 1;
+
+.col-1{
+    flex:1;
 }
-.col-2 {
-    flex: 2;
+
+.col-2{
+    flex:2;
 }
-.col-3 {
-    flex: 3;
+
+
+.col-3{
+    flex:3;
 }
-.col-4 {
-    flex: 4;
+
+.col-4{
+    flex:4;
 }
-.col-5 {
-    flex: 5;
+
+.col-5{
+    flex:5;
 }
-@media (max-width: 800px) {
-    .container {
+
+.col-6{
+    flex:6;
+}
+@media(max-width:100%){
+    .conteiner{
         flex-direction: column;
-   }
+    }
 }
+
 
 
 /* Шапка сайта */
@@ -72,22 +79,52 @@ header {
 
 
 /* Основное содержимое */
+
 main {
+    background-image: url(/site/images/lop.jpg);
+    background-position: center center;
+    background-size: cover;
     display: flex;
     flex: 1 0 auto;
 }
 main > div.container {
     flex: 1 0 auto;
 }
+aside {
+    flex: 1 0 auto;
+    padding:0 15px
+}
 section {
-
+    flex: 3 0 auto;
+    padding:0 15px
 }
 aside {
-
+    flex: 1 0 auto;
+    padding:0 15px
 }
+
+
 
 
 /* Подвал сайта */
 footer {
     flex: 0 0 auto;
+}
+
+.button {
+    height: 50px;
+    /*width: 100px;*/
+    background-color: #999;
+    border-radius: 5px;
+
+}
+
+
+hader a,
+footer a {color:#fff;
+    text-decoration:none;
+}
+header a:hover,
+footer a:hover {
+    text-decoration:underline;
 }
