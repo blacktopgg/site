@@ -3,6 +3,7 @@
 @import url("https://marksheet.io/css/reset.css");
 
 
+
 /* Базовые стили */
 html {
     height: 100%;
@@ -15,7 +16,7 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    max-width: 1200px; /*максимальная ширина может иметь другое значение*/
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -38,11 +39,30 @@ nav ul {
 
 
 /* Гибкая верстка */
-
-
-
-
-
+img {
+    width: 100%;
+    max-width: 100%;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+.col-3 {
+    flex: 3;
+}
+.col-4 {
+    flex: 4;
+}
+.col-5 {
+    flex: 5;
+}
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+   }
+}
 
 
 /* Шапка сайта */
@@ -60,10 +80,10 @@ main > div.container {
     flex: 1 0 auto;
 }
 section {
-    flex: 3 0 auto;
+
 }
 aside {
-    flex: 1 0 auto;
+
 }
 
 
@@ -71,4 +91,3 @@ aside {
 footer {
     flex: 0 0 auto;
 }
-
