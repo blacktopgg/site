@@ -58,7 +58,37 @@ strong{
 } 
 header{
  flex;0 0 auto;
- }
+  height: 200px;
+  background-color:#DC143C;
+  }
+  headr > div.container {
+     height: 100%;
+    align-items: flex-end;
+  }
+  headr ul {
+     display:flex;
+    padding-bottom:20px;
+  }
+  headr li {
+ color:#00FF00;
+  }
+   headr li a {
+      padding: 50px 10px 10px 10px;
+     margin-right: 10px;
+     color:#FF4500;
+     text-decoration: none;
+  }
+ .headr-icon {
+  display:flex; 
+  padding-bottom:20px;
+  align-items: center;
+  }
+ .headr-icon img {
+     padding-right:20px;
+  }
+   
+     
+    
  .moon {
   flex:1 0 auto;
   }
