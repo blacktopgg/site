@@ -169,6 +169,71 @@ header{
    .content{
     flex:1 0 auto;
     }
+  -content 4
+flex: 1 @ auto;
+padding: SSpx @:
+
+}
+
+.content div {
+justify-content: space-between;
+
+}
+
+-left-column {
+max-width: 440px;
+padding: 3@px 3@px 30px @;
+
+}
+
+.right-column {
+max-width: 440px;
+padding: 3@px @:
+
+}
+
+.content img {
+width: 100%;
+max-width: 440px;
+
+}
+
+.content h2 {
+font-family: Courier new, sans-serif;
+font-size: 1.6em;
+font-weight: bold;
+padding-bottom: 4@px;
+
+}
+
+.content p {
+line-height: 2@px:
+padding-bottom: 15px;
+
+}
+
+.content ul {
+margin-left:
+
+}
+
+.content li { _
+position: relative;
+padding-bottom: 15px;
+
+} BOT 3T0
+
+.content li::before { 
+content: "";
+position: absolute;
+left: [-25px;Je——
+top: Spx;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: #feca30;
+
+}
    .advantages {
    flex:1 0 auto;
    padding 55px 0 85 px 0;
